@@ -32,7 +32,11 @@ WHERE `students`.`date_of_birth` < CURDATE() - INTERVAL 30 YEAR;
 
 ```sql
 
-
+SELECT *
+FROM `university`.`courses`
+WHERE
+	`courses`.`period` LIKE "I %" AND
+    `courses`.`year` = 1;
 
 ```
 
