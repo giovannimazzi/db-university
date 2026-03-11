@@ -12,7 +12,9 @@ WHERE `students`.`date_of_birth` LIKE "1990-%";
 
 ```sql
 
-
+SELECT *
+FROM `university`.`courses`
+WHERE `courses`.`cfu` > 10;
 
 ```
 
