@@ -22,7 +22,9 @@ WHERE `courses`.`cfu` > 10;
 
 ```sql
 
-
+SELECT *
+FROM `university`.`students`
+WHERE `students`.`date_of_birth` < CURDATE() - INTERVAL 30 YEAR;
 
 ```
 
