@@ -56,7 +56,10 @@ WHERE
 
 ```sql
 
-
+SELECT *
+FROM `university`.`degrees`
+WHERE
+	`degrees`.`level` = "magistrale";
 
 ```
 
