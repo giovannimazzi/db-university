@@ -67,7 +67,8 @@ WHERE
 
 ```sql
 
-
+SELECT COUNT(*) AS "Departments number"
+FROM `university`.`departments`;
 
 ```
 
