@@ -2,7 +2,9 @@
 
 ```sql
 
-
+SELECT *
+FROM `university`.`students`
+WHERE `students`.`date_of_birth` LIKE "1990-%";
 
 ```
 
