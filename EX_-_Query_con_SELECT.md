@@ -44,7 +44,11 @@ WHERE
 
 ```sql
 
-
+SELECT *
+FROM `university`.`exams`
+WHERE
+	`exams`.`date` = "2020-06-20" AND
+    `exams`.`hour` > '14:00:00';
 
 ```
 
