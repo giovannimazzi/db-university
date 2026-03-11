@@ -76,6 +76,8 @@ FROM `university`.`departments`;
 
 ```sql
 
-
+SELECT COUNT(*)
+FROM `university`.`teachers`
+WHERE `phone` IS NULL;
 
 ```
