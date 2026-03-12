@@ -41,7 +41,13 @@ WHERE course_teacher.teacher_id = 44;
    nome
 
 ```sql
-
+SELECT *
+FROM university.students
+JOIN university.degrees
+ON students.degree_id = degrees.id
+JOIN university.departments
+ON degrees.department_id = departments.id
+ORDER BY students.surname, students.name;
 ```
 
 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
