@@ -1,7 +1,12 @@
 1. Contare quanti iscritti ci sono stati ogni anno
 
 ```sql
-
+SELECT
+	YEAR(students.enrolment_date) year,
+	COUNT(students.id) enrolments
+FROM university.students
+GROUP BY YEAR(students.enrolment_date)
+ORDER BY YEAR(students.enrolment_date) DESC;
 ```
 
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
