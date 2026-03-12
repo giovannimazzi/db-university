@@ -1,3 +1,12 @@
+# Assegnazione del 12/03/2026
+
+nome repo: `db-university`
+
+Utilizzando lo stesso database di ieri, eseguite le query in allegato.\
+Caricate un secondo file per le soluzioni delle query GROUP BY e un altro file per le soluzioni delle query JOIN nella stessa repo di ieri (db-university) con le query di oggi.
+
+---
+
 # Assegnazione del 11/03/2026
 
 nome repo: `db-university`
