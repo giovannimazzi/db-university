@@ -111,5 +111,12 @@ WHERE departments.name LIKE "Dipartimento di Matematica";
    filtrare i tentativi con voto minimo 18.
 
 ```sql
-
+SELECT
+    student_id,
+    exam_id,
+    COUNT(*) numero_tentativi,
+    MAX(vote) voto_massimo
+FROM university.exam_student
+GROUP BY student_id, exam_id
+HAVING MAX(vote) >= 18;
 ```
