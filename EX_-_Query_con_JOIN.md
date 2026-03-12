@@ -92,7 +92,18 @@ ON course_teacher.teacher_id = teachers.id;
    Matematica (54)
 
 ```sql
-
+SELECT DISTINCT
+	teachers.*
+FROM university.teachers
+JOIN university.course_teacher
+ON course_teacher.teacher_id = teachers.id
+JOIN university.courses
+ON courses.id = course_teacher.course_id
+JOIN university.degrees
+ON degrees.id = courses.degree_id
+JOIN university.departments
+ON departments.id = degrees.department_id
+WHERE departments.name LIKE "Dipartimento di Matematica";
 ```
 
 7. BONUS: Selezionare per ogni studente il numero di tentativi sostenuti
